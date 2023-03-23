@@ -23,21 +23,23 @@ const button = document.querySelector('button');
 
 button.addEventListener('click', function() {
 
-  const email = input.value;
-
-  let outputFor = false;
-
-  for (let i = 0; i < lista.length; i++) {
-
-    if (email === lista[i]) {
-      outputFor = true;
-    }  
-    
-  }
-
+  // Output e reset
   let output = document.getElementById('output');
   console.log(output);
+  output.innerHTML = ' ';
+  
+  // Dati forniti dall'utente
+  const email = input.value;
 
+  // Controllo dei dati
+  let outputFor = false;
+  for (let i = 0; i < lista.length; i++) {
+    if (email === lista[i]) {
+      outputFor = true;
+    }     
+  }
+
+  // Stampa dei risultati
   if(outputFor === true) {
     output.append('Benvenuto!')   ;
   } else {
