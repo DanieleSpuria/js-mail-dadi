@@ -8,3 +8,19 @@
 
 // Input
 const input = document.getElementById('email');
+console.log(input);
+
+// Button
+const button = document.querySelector('button');
+console.log(button);
+
+button.addEventListener('click', function() {
+
+  const email = input.value;
+  console.log(email);
+  
+  input.value = '';
+
+});
+
+

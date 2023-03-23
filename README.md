@@ -15,5 +15,5 @@ Se dobbiamo confrontare qualcosa che “cosa” ci serve?
 
 ## Sviluppo
 
-- Inserire input e agganciarlo ad una variabile
-- 
+- Inserito input e agganciato ad una variabile
+- Inserito button che salva la mail dell'utente in una variabile
