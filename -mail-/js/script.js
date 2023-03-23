@@ -31,13 +31,14 @@ button.addEventListener('click', function() {
 
     if (email === lista[i]) {
       output = true;
-      console.log('Benvenuto!');
-    } else {
-      console.log('Non sei autorizzato ad accedere.');
-    }
+    }  
+    
+  }
 
-    console.log()
-
+  if(output === true) {
+    console.log('Benvenuto!');
+  } else {
+    console.log('Non sei autorizzato a procedere!');
   }
 
   input.value = '';
