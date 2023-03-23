@@ -24,3 +24,5 @@ Se dobbiamo confrontare qualcosa che “cosa” ci serve?
 ## Sviluppo Dadi
 
 - Inserito variabili che generano i numeri random per utente e pc
+- Inserito bottone e h1 per visualizzare i risultati
+- Inserite condizioni per confrontare i risultati
