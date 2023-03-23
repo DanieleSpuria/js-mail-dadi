@@ -4,12 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10%;
+    }
+
+    .input{
+      display: flex;
+      justify-content: center;
+    }
+  </style>
   <title>mail</title>
 </head>
 <body>
 
-  <input type="email" id="email" placeholder="Inserire e-mail">
-  <button>Invia</button>
+  <main>
+    <div class="input">
+      <input type="email" id="email" placeholder="Inserire e-mail">
+      <button>Invia</button> 
+    </div>
+    
+    <h1 id="output"></h1> 
+  </main>
   
   <script src="js/script.js"></script>
 

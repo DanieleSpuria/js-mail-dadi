@@ -25,20 +25,23 @@ button.addEventListener('click', function() {
 
   const email = input.value;
 
-  let output = false;
+  let outputFor = false;
 
   for (let i = 0; i < lista.length; i++) {
 
     if (email === lista[i]) {
-      output = true;
+      outputFor = true;
     }  
     
   }
 
-  if(output === true) {
-    console.log('Benvenuto!');
+  let output = document.getElementById('output');
+  console.log(output);
+
+  if(outputFor === true) {
+    output.append('Benvenuto!')   ;
   } else {
-    console.log('Non sei autorizzato a procedere!');
+    output.append('Non sei autorizzato a procedere!');
   }
 
   input.value = '';
