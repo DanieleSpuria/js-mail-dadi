@@ -14,19 +14,20 @@ button.addEventListener('click', function() {
   let pc = Math.ceil(Math.random() * 6);
   console.log('utente', utente, 'pc', pc);
 
-  // Condizioni
-  if (utente > pc){
-    console.log('vince utente');
-  } else if (utente < pc){
-    console.log('vince pc');
-  } else {
-    console.log('pareggio');
-  }
-
   // Messaggio visualizzato
   let message = `Dado Utente = ${utente} <br>
-  Dado Pc = ${pc}`;
-  const dadi = document.getElementById('dadi').innerHTML = message;
-  
+  Dado Pc = ${pc} <br>`;
+  const dadi = document.getElementById('dadi');
+  dadi.innerHTML = message;
+
+  // Condizioni
+  if (utente > pc){
+    dadi.innerHTML += "Vince l'utente!";
+  } else if (utente < pc){
+    dadi.innerHTML += "Vince il computer!";
+  } else {
+    dadi.innerHTML += "Pareggio!";
+  }
+
 });
 
