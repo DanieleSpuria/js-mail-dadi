@@ -17,3 +17,4 @@ Se dobbiamo confrontare qualcosa che “cosa” ci serve?
 
 - Inserito input e agganciato ad una variabile
 - Inserito button che salva la mail dell'utente in una variabile
+- Inserito array contenente lista degli utenti accettati

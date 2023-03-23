@@ -6,6 +6,15 @@
 4. Stampare risultato ricerca.
 */
 
+// Lista utenti accettati
+const lista = [
+  'filippo@gmail.com',
+  'giovanni@hotmail.com',
+  'cataldo@yahoo.com',
+  'esmeralda@libero.it',
+  'daniele.spuria.jama@gmail.com'
+];
+
 // Input
 const input = document.getElementById('email');
 console.log(input);
@@ -18,7 +27,7 @@ button.addEventListener('click', function() {
 
   const email = input.value;
   console.log(email);
-  
+
   input.value = '';
 
 });
