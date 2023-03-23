@@ -17,19 +17,33 @@ const lista = [
 
 // Input
 const input = document.getElementById('email');
-console.log(input);
 
 // Button
 const button = document.querySelector('button');
-console.log(button);
 
 button.addEventListener('click', function() {
 
   const email = input.value;
-  console.log(email);
+
+  let output = false;
+
+  for (let i = 0; i < lista.length; i++) {
+
+    if (email === lista[i]) {
+      output = true;
+      console.log('Benvenuto!');
+    } else {
+      console.log('Non sei autorizzato ad accedere.');
+    }
+
+    console.log()
+
+  }
 
   input.value = '';
 
 });
+
+
 
 
